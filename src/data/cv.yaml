@@ -1,0 +1,113 @@
+profile:
+  name: Jim Halpert
+  position: "Senior Paper Sales Associate & Prank Architect"
+
+contact:
+  mail: "jim.halpert@dundermifflin.com"
+  city: "Scranton, PA (Unfortunately)"
+  linkedin:
+    title: "LinkedIn"
+    url: "https://linkedin.com/in/jim-halpert-not-dwight"
+  github:
+    title: "GitHub"
+    url: "https://github.com/bigTuna"
+  researchgate:
+    title: "ResearchGate"
+    url: "https://www.researchgate.net/jim-who"
+
+skills:
+  - categoryName: "Core Competencies"
+    skills:
+      - "Staring at the camera meaningfully"
+      - "Impersonating Dwight Schrute (Certified)"
+      - "Wasting company time with elaborate pranks"
+      - "Looking confused while everyone else is confused"
+  - categoryName: "Sales & Negotiation"
+    skills:
+      - "Paper (all weights)"
+      - "Convincing clients we are not going out of business"
+      - "Smiling through soul-crushing meetings"
+  - categoryName: "Prank Engineering"
+    skills:
+      - "Jell-O encapsulation (staplers, phones, entire desks)"
+      - "Identity Theft (specifically: Dwight K. Schrute)"
+      - "False Fire Drills"
+      - "Bear attacks (awareness, not execution)"
+
+certifications:
+  - name: Pretending to Work Certified (2005 - 2013, continuous renewal)
+
+languages:
+  - name: "English"
+    level: "Native"
+  - name: "Sarcasm"
+    level: "Fluent"
+  - name: "Dwight"
+    level: "Dangerously proficient"
+
+about:
+  description: |
+    Nine years of selling paper, pranking Dwight, and looking at a documentary camera crew like they're the only ones who understand me. I started at Dunder Mifflin expecting to leave in six months — I stayed nine years, became co-manager, fell in love with the receptionist, and somehow ended up in sports marketing before coming back. I thrive in chaotic open-floor-plan environments with inadequate HR support and at least one delusional regional manager. Currently open to roles where my skill set — sales, leadership, and turning staplers into dessert — are considered assets.
+
+experiences:
+  - company: "Dunder Mifflin Paper Company"
+    year: "2005 - 2013"
+    position: "Senior Sales Representative"
+    description: |
+      - **Consistently top 3 salesman** in the Scranton branch, despite spending an estimated **40% of work hours** on Dwight-related operations.
+      - Survived **three different regional managers**, two branch mergers, one Threat Level Midnight screening, and a company-wide purge that deleted everyone's contacts.
+      - Served as **Co-Manager** (briefly) before Michael Scott reasserted dominance in a meeting that lasted four hours.
+      - Masterminded the **Fax from Future Dwight** campaign, the **Gaydar** incident, and the legendary **desk-in-the-bathroom** relocation project.
+
+  - company: "Athlead / Athleap"
+    year: "2013 - 2014"
+    position: "Co-Founder & Sports Marketing Executive"
+    description: |
+      - Co-founded a sports marketing startup in Philadelphia. **Relocated family**, pitched investors, secured athletes.
+      - Company renamed to **Athleap** after a trademark dispute — rebranding completed in one afternoon.
+      - Returned to Scranton for wife. **No regrets** (some regrets).
+
+  - company: "Dunder Mifflin — Stamford Branch"
+    year: "2006 - 2007"
+    position: "Sales Representative (Voluntary Exile)"
+    description: |
+      - Requested transfer to Stamford, CT to **professionally process unresolved feelings for a coworker who was engaged to someone else**. HR approved. HR did not ask follow-up questions.
+      - Ranked **#1 salesman** in Stamford despite significant internal distraction.
+      - Branch closed. Was forced to return to Scranton. She had not left Roy yet. **Incredible.**
+
+  - company: "Dunder Mifflin Paper Company"
+    year: "2014 - 2015"
+    position: "Sales Representative (Return Arc)"
+    description: |
+      - Returned to Scranton office. Resumed prank operations. **Dwight had not learned.**
+      - Supported Pam's artistic career while selling reams of paper. Work-life balance: excellent.
+
+education:
+  - name: "University of Scranton"
+    location: "Scranton, PA"
+    year: "2001 - 2005"
+    diplomaName: "Bachelor's in Business Administration"
+  - name: "The School of Hard Knocks"
+    location: "Dunder Mifflin Break Room"
+    year: "2005 - 2013"
+    diplomaName: "Minor in Dwight Management & Corporate Survival"
+  - name: "Michael Scott's Diversity Day Seminar"
+    location: "Dunder Mifflin Conference Room B"
+    year: "2005"
+    diplomaName: "Certificate of Attendance (Mandatory, Non-Consensual)"
+
+projects:
+  - name: "Identity Theft — Dwight K. Schrute"
+    year: "2006"
+    description: |
+      Showed up to work dressed as Dwight. Wore glasses, beet-colored shirt, and carried a bobblehead of himself. **Dwight did not find it funny.** Everyone else did. **Mission accomplished.**
+
+  - name: "Fax from Future Dwight"
+    year: "2007"
+    description: |
+      Sent faxes to Dwight, signed *"Dwight from the future,"* warning him of imminent threats. **Caused Dwight to tackle a perfectly innocent coworker.** Zero injuries. Peak performance.
+
+  - name: "Threat Level Midnight (Uncredited Actor)"
+    year: "2002 - 2012 (in post-production)"
+    description: |
+      Played villain **Samuel L. Chang** in Michael Scott's decade-long action epic. Did not receive royalties. Did not ask. Film premiered to a captive office audience in 2012 — runtime 92 minutes, one improvised dance number, zero stunt doubles. **Pam cried. This was never explained.**
