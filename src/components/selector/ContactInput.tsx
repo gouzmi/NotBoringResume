@@ -69,19 +69,19 @@ function ContactInput({ contact, onChange }: ContactInputProps) {
         link={contact.linkedin}
         onChange={(linkedin) => onChange({ ...contact, linkedin })}
       />
-      <DeleteButton onClick={() => onChange({ ...contact, linkedin: null })} />
+      <DeleteButton onClick={() => onChange({ ...contact, linkedin: undefined })} />
       <LinkInput
         label="GitHub"
         link={contact.github}
         onChange={(github) => onChange({ ...contact, github })}
       />
-      <DeleteButton onClick={() => onChange({ ...contact, github: null })} />
+      <DeleteButton onClick={() => onChange({ ...contact, github: undefined })} />
       <LinkInput
         label="ResearchGate"
         link={contact.researchgate}
         onChange={(researchgate) => onChange({ ...contact, researchgate })}
       />
-      <DeleteButton onClick={() => onChange({ ...contact, researchgate: null })} />
+      <DeleteButton onClick={() => onChange({ ...contact, researchgate: undefined })} />
     </div>
   );
 }

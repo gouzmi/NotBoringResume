@@ -34,7 +34,7 @@ function Contact({ mail, city, linkedin, github, researchgate }: ContactProps) {
         )}
         {linkedin && (
           <a
-            href={linkedin.url}
+            href={linkedin.url ?? undefined}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row gap-1.5"
@@ -47,7 +47,7 @@ function Contact({ mail, city, linkedin, github, researchgate }: ContactProps) {
         )}
         {github && (
           <a
-            href={github.url}
+            href={github.url ?? undefined}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row gap-1.5"
@@ -60,7 +60,7 @@ function Contact({ mail, city, linkedin, github, researchgate }: ContactProps) {
         )}
         {researchgate && (
           <a
-            href={researchgate.url}
+            href={researchgate.url ?? undefined}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row gap-1.5"

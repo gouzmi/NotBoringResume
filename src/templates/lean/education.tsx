@@ -33,9 +33,11 @@ function Education({ education }: { education: EducationProps[] }) {
             <Text as="p" variant="xxs" className="italic">
               {education.diplomaName}
             </Text>
-            <MarkdownText className="text-[10px]">
-              {education.description}
-            </MarkdownText>
+            {education.description && (
+              <MarkdownText className="text-[10px]">
+                {education.description}
+              </MarkdownText>
+            )}
           </div>
         ))}
       </div>
