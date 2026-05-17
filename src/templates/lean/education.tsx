@@ -10,7 +10,7 @@ function Education({ education }: { education: EducationProps[] }) {
       <Text variant="lg" as="h2">
         Education
       </Text>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         {education.map((education) => (
           <div key={education.name + education.year}>
             <div className="flex justify-between">

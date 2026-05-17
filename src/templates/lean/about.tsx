@@ -9,7 +9,7 @@ function About({ description }: AboutProps) {
 
   return (
     <>
-      <ContentSection className="flex flex-row pt-5 gap-2">
+      <ContentSection className="flex flex-row pt-4 gap-2">
         <FaQuoteLeft className="w-4 h-3 shrink-0" />
         <Text variant="xs" as="p" className="text-[13px] font-normal">
           {description}

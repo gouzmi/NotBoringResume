@@ -4,7 +4,7 @@ import type { Profile as ProfileProps } from "@/types/cv";
 
 function Profile({ image, name, position }: ProfileProps) {
   return (
-    <ContentSection className="pt-5">
+    <ContentSection className="pt-4">
       <img src={image} alt={name} className="w-48 h-52 object-cover mx-auto mb-4" />
       <Text as="h2" variant="base" className="text-black font-semibold">
         {name}
