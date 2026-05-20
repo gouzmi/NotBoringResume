@@ -10,7 +10,7 @@ function Experiences({ experiences }: { experiences: Experience[] }) {
       <Text variant="lg" as="h2">
         Experiences
       </Text>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         {experiences.map((experience) => (
           <div key={experience.company + experience.year}>
             <div className="flex justify-between">
