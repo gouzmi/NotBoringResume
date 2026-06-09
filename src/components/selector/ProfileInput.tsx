@@ -79,8 +79,12 @@ function ProfileInput({ profile, onChange }: ProfileInputProps) {
         height: (crop.height / 100) * image.height * scaleY,
       };
 
-      canvas.width = pixelCrop.width;
-      canvas.height = pixelCrop.height;
+      // Cap output resolution: the photo renders at ~200px, so 600px stays
+      // crisp in print while keeping the embedded image (and PDF) small.
+      const MAX_SIZE = 600;
+      const downscale = Math.min(1, MAX_SIZE / Math.max(pixelCrop.width, pixelCrop.height));
+      canvas.width = Math.round(pixelCrop.width * downscale);
+      canvas.height = Math.round(pixelCrop.height * downscale);
 
       const ctx = canvas.getContext("2d");
       if (!ctx) {
@@ -96,11 +100,11 @@ function ProfileInput({ profile, onChange }: ProfileInputProps) {
         pixelCrop.height,
         0,
         0,
-        pixelCrop.width,
-        pixelCrop.height
+        canvas.width,
+        canvas.height
       );
 
-      resolve(canvas.toDataURL("image/jpeg", 0.9));
+      resolve(canvas.toDataURL("image/jpeg", 0.85));
     });
   };
 

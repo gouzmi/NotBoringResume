@@ -45,7 +45,7 @@ function Selector({ initialCv, cv, setCv, printPdf }: SelectorProps) {
         <Button
           size="lg"
           variant="outline"
-          onClick={() => downloadYaml(cv)}
+          onClick={() => void downloadYaml(cv)}
           className="px-4 py-2 bg-primary text-background"
         >
           Download YAML

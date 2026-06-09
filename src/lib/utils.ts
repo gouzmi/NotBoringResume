@@ -6,14 +6,33 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function downloadYaml(data: object, filename = "cv.yaml") {
+export async function downloadYaml(data: object, filename = "cv.yaml") {
   const yamlString = yaml.dump(data);
-  const dataUri = "data:text/plain;charset=utf-8," + encodeURIComponent(yamlString);
 
+  if ("showSaveFilePicker" in window) {
+    try {
+      const handle = await (window as Window & typeof globalThis & { showSaveFilePicker: (opts: object) => Promise<FileSystemFileHandle> }).showSaveFilePicker({
+        suggestedName: filename,
+        types: [{ description: "YAML file", accept: { "application/octet-stream": [".yaml", ".yml"] } }],
+      });
+      const writable = await handle.createWritable();
+      await writable.write(yamlString);
+      await writable.close();
+      return;
+    } catch (err) {
+      if ((err as DOMException).name === "AbortError") return;
+    }
+  }
+
+  const blob = new Blob([yamlString], { type: "text/yaml" });
+  const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
-  link.href = dataUri;
+  link.href = url;
   link.download = filename;
+  document.body.appendChild(link);
   link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 }
 
 export function uploadYaml<T = unknown>(): Promise<T> {
